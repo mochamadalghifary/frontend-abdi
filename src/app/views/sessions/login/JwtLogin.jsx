@@ -53,8 +53,8 @@ const JwtLogin = () => {
   const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
   const [userInfo, setUserInfo] = useState({
-    email: '',
-    password: '',
+    email: 'fradotech.id@gmail.com',
+    password: 'fradoo',
   })
   const [message, setMessage] = useState('')
   const { login } = useAuth()
@@ -172,18 +172,18 @@ const JwtLogin = () => {
                   <Span sx={{ mr: 1, ml: '20px' }}>or</Span>
                   <Button
                     sx={{ textTransform: 'capitalize' }}
-                    onClick={() =>
-                      navigate('/session/signup')
-                    }
+                    // onClick={() =>
+                    //   navigate('/session/signup')
+                    // }
                   >
                     Sign up
                   </Button>
                 </FlexBox>
                 <Button
                   sx={{ color: textPrimary }}
-                  onClick={() =>
-                    navigate('/session/forgot-password')
-                  }
+                  // onClick={() =>
+                  //   navigate('/session/forgot-password')
+                  // }
                 >
                   Forgot password?
                 </Button>
