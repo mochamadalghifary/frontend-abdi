@@ -103,7 +103,7 @@ const PaginationCheckUp = () => {
         <TableBody>
           {checkUps
           .filter(
-            checkUp => checkUp.patient.name.toLowerCase().includes(search))
+            checkUp => checkUp.patient.name.toLowerCase().includes(search.toLowerCase()))
           .slice(
             page * rowsPerPage,
             page * rowsPerPage + rowsPerPage

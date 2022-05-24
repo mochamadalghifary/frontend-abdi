@@ -96,7 +96,7 @@ const PaginationPatients = () => {
         <TableBody>
           {patients
           .filter(
-            patient => patient.name.toLowerCase().includes(search))
+            patient => patient.name.toLowerCase().includes(search.toLowerCase()))
           .slice(
             page * rowsPerPage,
             page * rowsPerPage + rowsPerPage
